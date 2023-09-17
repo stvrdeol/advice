@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: #52ffa8;
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    width: 100vw;
+    font-size: 2.8rem;
+    height: 100vh;
+    background-color: var(--Dark-Blue);
+    color: var(--Light-Cyan);
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+.container {
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 3rem 2rem;
+    max-width: 40rem;
+    position: relative;
+    padding-bottom: 7rem;
+    border-radius: 1rem;
+}
+
+.container>p:first-child {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.advice {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.desktop-img {
+    display: none;
+    width: 100%;
+}
+
+.mobile-img {
+    margin-inline: auto;
+    width: 100%;
+}
+
+.dice-img-container {
+    background-color: var(--Neon-Green);
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: max-content;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all ease-in-out;
+}
+
+.dice-img-container:hover {
+    box-shadow: 0 0 2.5rem var(--Neon-Green);
+}
